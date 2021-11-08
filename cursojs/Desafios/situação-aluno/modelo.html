@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do Aluno</title>
+    <style>
+        button {
+        font: normal 17pt arial;
+        background-color: rgba(169, 169, 169, 0.534);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Situação do Aluno</h1>
+    </header>
+        <button onclick="calcular()">Entrar com as notas</button>
+    <section id="resultado">
+        <p>Clique no botão acima para informar as notas do aluno.</p>
+    </section>
+    <script>
+        function calcular() {
+        let alun = window.prompt('Qual é o nome do aluno?')
+        let not1 = Number(window.prompt(`Primeira nota de ${alun}:`))
+        let not2 = Number(window.prompt(`Segunda nota de ${alun}:`))
+        let res = window.document.getElementById('resultado')
+        let med = (not1+not2)/2
+        res.innerHTML = `<p><strong>Analisando situação de ${alun}</strong></p>
+        <p>Com notas ${not1} e ${not2}, a média é ${med.toFixed(2).replace(".",",")}</p>`
+            if (med > 6) {
+                res.innerHTML+= `<p>Com média acima de 6,0, o aluno está APROVADO!</p>`
+            } else if (med > 3) {
+                res.innerHTML+= `<p>Com média entre 3,0 e 6,0, o aluno está em RECUPERAÇÃO!</p>`
+            } else
+            res.innerHTML+= `<p>Com média abaixo de 3,0, o aluno está REPROVADO!</p>`    
+        }
+    </script>
+</body>
+</html>

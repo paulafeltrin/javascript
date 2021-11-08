@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    Nacionalidade: <input type="text" name="nacio" id="nacio">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar () {
+            var nac = window.document.querySelector('input#nacio')
+            var res = window.document.getElementById('res')
+            var nacp = String(nac.value.toLocaleUpperCase()) //comando para aceitar maiusc/minusc
+            res.innerHTML = `<p>País de origem: <strong>${nacp}</stong>.</p>`
+                if (nacp == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong>.</p>`
+            } else{
+                res.innerHTML += `<p>Você é <strong>ESTRANGIRO!</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

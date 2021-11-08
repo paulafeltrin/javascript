@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+    <style>
+        button {
+        font: normal 16pt arial;
+        background-color: darkgray;
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ano Bissexto</h1>
+    </header>
+        <button onclick="converter()">Converter</button>
+    <section id="resultado">
+        <p>Informe um ano para verificar se o mesmo é bissexto.</p>
+    </section>
+    <script>
+        function converter() {
+        let ano = Number(window.prompt('Qual é o ano que você deseja verificar?'))
+        let res = window.document.getElementById('resultado')
+        res.innerHTML = `<p>Ano verificado: ${ano}</p>`
+            if ((ano % 4 == 0) && ((ano % 100 != 0) || (ano % 400 == 0))) {
+                res.innerHTML += `<p>ANO BISSEXTO</p>`
+            } else{
+                res.innerHTML += `<p>NÃO É ANO BISSEXTO</p>`
+            }
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <style>
+        button {
+        font: normal 17pt arial;
+        background-color: rgba(169, 169, 169, 0.568);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperatura</h1>
+    </header>
+        <button onclick="converter()">Converter</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function converter() {
+        let c = Number(window.prompt('Digite uma temperatura em °C (Celsius).'))
+        let res = window.document.getElementById('resultado')
+        let k = c + 273.15
+        let f= (c * 9/5) + 32
+        res.innerHTML = `<p>A temperatura é de ${(k).toLocaleString('pt-BR',{style:'decimal'})} Kelvin (˚K)</p>
+        <p>A temperatura é de ${(f).toLocaleString('pt-BR',{style:'decimal'})} Fahrenheit (˚F)</p>` //(10 °C × 9/5) + 32 = 50 °F //10 °C + 273,15 = 283,15 K
+        }
+    </script>
+</body>
+</html>

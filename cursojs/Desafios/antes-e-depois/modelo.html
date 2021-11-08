@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Antes e Depois</title>
+    <style>
+        button {
+        font: normal 16pt times;
+        background-color: rgba(169, 169, 169, 0.781);
+        color:black;
+        width: 300px;
+        height: 100px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Antes e Depois</h1>
+    </header>
+        <button onclick="converter()">Antecessor e Sucessor</button>
+    <section id="resultado">
+        <p>Informe um número para verificar o antecessor e o sucessor.</p>
+    </section>
+    <script>
+        function converter() {
+        let num = Number(window.prompt('Digite um número qualquer'))
+        let res = window.document.getElementById('resultado')
+        ant = num-1
+        dep = num+1
+        window.alert(`Antes do número ${num}, temos ${(ant)} \nDepois do número ${num}, temos ${(dep)}`)
+        }
+    </script>
+</body>
+</html>

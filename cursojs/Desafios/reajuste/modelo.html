@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajustar Salário</title>
+    <style>
+        button {
+        font: normal 16pt arial;
+        background-color: rgba(169, 169, 169, 0.541);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reajuste Salarial</h1>
+    </header>
+        <button onclick="calcular()">Reajustar Salário</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function calcular() {
+        let func = window.prompt('Qual é o nome do funcionário?')
+        let sal = Number(window.prompt(`Qual é o salário de ${func}?`))
+        let per = Number(window.prompt(`O salário de ${func} vai ser rejustado em qual porcentagem?`))
+        let res = window.document.getElementById('resultado')
+        let pers = sal*(per/100)
+        let stot = sal+pers
+        res.innerHTML = `<p><strong>${func} recebeu um aumento salarial!</strong></p>
+                <p>O salário atual era ${sal.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}</p>
+                <p>Com o aumento de ${per}%, o salário vai aumentar no próximo mês ${pers.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}.</p>
+                <p>E, a partir daí, ${func} passa a ganhar ${stot.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}.</p>`
+        }
+    </script>
+</body>
+</html>

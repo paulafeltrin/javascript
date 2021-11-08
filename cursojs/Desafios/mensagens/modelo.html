@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Mensagens</title>
+    <style>
+        div {
+            font: normal 20pt Times;
+            background-color: rgba(175, 118, 156, 0.945);
+            color:black;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            display: inline-block;  
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Clique em um botão</h1>
+
+    <div id="area1">
+    Primeiro Botão   
+    </div>
+    <script>
+        var a = window.document.getElementById('area1')
+        a.addEventListener('click', clicar)
+        function clicar(){
+            window.alert(`Você clicou no Primeiro botão!`)
+        }
+
+    </script>
+    <div id="area2">
+    Segundo Botão
+    </div>
+    <script>
+        var a = window.document.getElementById('area2')
+        a.addEventListener('click', clicar)
+        function clicar(){
+            window.alert(`Você clicou no Segundo botão!`)
+        }
+    </script>
+   
+    <div id="area3">
+    Terceiro Botão
+    </div>
+    <script>
+        var a = window.document.getElementById('area3')
+        a.addEventListener('click', clicar)
+        function clicar(){
+            window.alert(`Você clicou no Terceiro botão!`)
+        }
+    </script>
+    
+</body>
+</html>

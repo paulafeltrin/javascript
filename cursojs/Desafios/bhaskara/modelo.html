@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <style>
+        button {
+        font: normal 17pt arial;
+        background-color: rgba(169, 169, 169, 0.685);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resolvendo Bhaskara</h1>
+    </header>
+        <button onclick="calcular()">Calcular</button>
+    <section id="resultado">
+        <p>Considerando uma equação no formato <strong>ax<sup>2</sup> + bx + c = 0</strong>, clique no botão acima para calcular o valor de &Delta;.</p>
+    </section>
+    <script>
+        function calcular() {
+        let a = Number(window.prompt('Qual é o valor de a?'))
+        let b = Number(window.prompt('Qual é o valor de b?'))
+        let c = Number(window.prompt('Qual é o valor de c?'))
+        let res = window.document.getElementById('resultado')
+        let del = (b**2) - (4 * a * c)
+        res.innerHTML = `<h2><strong>Resultado Bhaskara</strong></h2>
+        <p>Equação atual é <strong>${a}x<sup>2</sup> + ${b}x + ${c} = 0</strong></p>
+        <p>O cálculo realizado será &Delta; = ${b}<sup>2</sup> – 4 . ${a} . ${c}</p>
+        <p>O valor de Delta encontrado foi &Delta; = ${del}</p>`
+        }
+    </script>
+</body>
+</html>

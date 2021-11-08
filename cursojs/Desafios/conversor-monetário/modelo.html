@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Monetário</title>
+    <style>
+        button {
+        font: normal 18pt arial;
+        background-color: rgba(169, 169, 169, 0.548);
+        color:black;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversor Monetário R$ &#8594; US$</h1>
+    </header>
+        <button onclick="converter()">Converter</button>
+    <section id="resultado">
+        <p>Resultado</p>
+    </section>
+    <script>
+        let cotd = Number(window.prompt('Antes de mais nada, quanto está a cotação do Dólar agora?'))
+        //window.alert(`O Dólar está cotado a ${cotd} reais`)
+        function converter() {
+            var conrs = Number(window.prompt('Quantos R$ deseja converter?'))
+            let res = window.document.getElementById('resultado')
+            let conv = conrs/cotd
+            res.innerHTML = `<h3>Você vai comprar ${conv.toLocaleString('pt-BR', {style:'currency',currency:'USD',currencyDisplay:'symbol'})} (DÓLARES), na cotação de ${cotd.toLocaleString('pt-BR', {style:'currency',currency:'BRL',currencyDisplay:'symbol'})} (REAIS).</h3>`
+        }
+    </script>
+</body>
+</html>

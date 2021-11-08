@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Troco</title>
+    <style>
+        div#area {
+            font: normal 20pt Times;
+            background-color: rgba(207, 153, 189, 0.945);
+            color:black;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <div id="area">
+    Comprar Produto
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        function clicar(){
+        a.var; produto = window.prompt(`Qual produto está comprando?`)
+        a.var; custo = Number(window.prompt(`Quanto custa o ${produto} que deseja comprar?`))
+        a.var; valor = Number(window.prompt(`Qual foi o valor que você deu para o ${produto}?`))
+        a.var = window.alert(`Você comprou um ${produto} que custa ${(custo).toLocaleString('pt-BR', {style:'currency',currency:'BRL',currencyDisplay:'symbol'})}. \nDeu ${(valor).toLocaleString('pt-BR', {style:'currency',currency:'BRL',currencyDisplay:'symbol'})} de pagamento e vai receber ${(valor - custo).toLocaleString('pt-BR', {style:'currency',currency:'BRL',currencyDisplay:'symbol'})}. \nVolte Sempre!`)
+        }
+    </script>
+</body>
+</html>

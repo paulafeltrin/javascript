@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço Mudou</title>
+    <style>
+        button {
+        font: normal 17pt arial;
+        background-color: rgba(169, 169, 169, 0.5);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Preço Mudou</h1>
+    </header>
+        <button onclick="calcular()">Verificar</button>
+    <section id="resultado">
+        <p>Clique no botão acima para analisar a mudança de preço.</p>
+    </section>
+    <script>
+        function calcular() {
+        let pre1 = Number(window.prompt('Qual era o preço anterior do produto?'))
+        let pre2 = Number(window.prompt('Qual é o preço atual do produto?'))
+        let res = window.document.getElementById('resultado')
+        res.innerHTML = `<h2>Analisando os valores informados:</h2>
+            <p>O produto custava ${pre1.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})} reais e agora custa ${pre2.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})} reais</p>`
+            if (pre1 > pre2) {
+                res.innerHTML += `<p>Hoje o produto está mais barato</p>
+                <p>O preço caiu ${(pre1 - pre2).toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})} reais em relação ao preço anterior.</p>
+                <p>Uma variação de ${((pre2/pre1-1)*100).toFixed(2).replace(".",",")}% para baixo</p>`
+            }else {
+                res.innerHTML += `<p>Hoje o produto está mais caro</p>
+                <p>O preço subiu ${(pre2 - pre1).toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})} reais em relação ao preço anterior.</p>
+                <p>Uma variação de ${((pre2/pre1-1)*100).toFixed(2).replace(".",",")}% para cima</p>`
+            }
+        }
+    </script>
+</body>
+</html>

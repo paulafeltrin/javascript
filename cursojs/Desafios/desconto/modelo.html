@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        button {
+        font: normal 15pt arial;
+        background-color: rgba(169, 169, 169, 0.603);
+        color:black;
+        width: 150px;
+        height: 90px;
+        line-height: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Desconto</h1>
+    </header>
+        <button onclick="converter()">Desconto 10%</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function converter() {
+        let prod = window.prompt('Qual é o produto que está comprando?')
+        let valr = Number(window.prompt(`Qual é o preço do ${prod}?`))
+        let res = window.document.getElementById('resultado')
+        let desc = valr*0.1
+        let f= valr-desc
+        res.innerHTML = `<h2><strong>Calculando desconto de 10%</strong></h2>
+        <p>Preço Original: ${valr.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}</p>
+        <p>Desconto em reais: ${desc.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}</p>
+        <p>Você vai pagar: ${f.toLocaleString('pt-BR',{style:'currency',currency:'BRL',currencyDisplay:'symbol'})}</p>`
+        }
+    </script>
+</body>
+</html>
