@@ -3,63 +3,35 @@
 
  Lista de Exercícios:
 
-https://paulafeltrin.github.io/javascript/
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula004/ex001.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula004/ex001.html">Exercício 001 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex002.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex002.html">Exercício 002 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex003.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex003.html">Exercício 003 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex004.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex004.html">Exercício 004 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex005.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula006/ex005.html">Exercício 005 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula010/ex006.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula010/ex006.html">Exercício 006 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula010/ex007.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula010/ex007.html">Exercício 007 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex008.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex010.html">Exercício 010 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex009.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex011.html">Exercício 011 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex010.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012ex/ex014/modelo.html">Exercício 014 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula011/ex011.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012ex/ex015/modelo.html">Exercício 015 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012/ex011.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula014ex/ex016/modelo.html">Exercício 016 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012/ex012.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula014ex/ex017/modelo.html">Exercício 017 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012/ex013.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
+<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016ex/ex018/modelo.html">Exercício 018 - </a>
 
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012ex/ex014/modelo.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula012ex/ex015/modelo.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula013/ambiente.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula014ex/ex016/modelo.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula014ex/ex017/modelo.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula015/ambiente.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula015/vetor.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016/funcao01.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016/funcao02.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016/funcao03.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016/funcao04.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016/funcao05.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula016ex/ex018/modelo.html">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
-
-<a href="https://paulafeltrin.github.io/javascript/estudos/exercicios/aula017/objeto01.js">Exercício 004 - Imagens e Favicons (inserir Favicon)</a>
 
  Lista de Desafios:
 
